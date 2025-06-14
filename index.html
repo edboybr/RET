@@ -19,76 +19,56 @@
           <div class="card-body">
             <h5 class="card-title">Scripts</h5>
 
-            <br><br>
-CONTRATO REVERTIDO
-<br><br>
-Nome do Titular:
-<br>
-Titular está em linha no ato do atendimento? SIM ( ) NÃO ( )
-<br>
-Titular confirmou dados e passou para ser tratado por: _______ Parentesco: ______
-<br>
-Confirmado Dados? CPF ( ) Data de Nascimento ( ) Nome completo ( ) Endereço ( )
-<br>
-Telefone no ato da ligação:
-<br>
-Plano que irá permanecer:
-<br>
-Desconto: SIM ( ) NÃO ( )
-<br>
-Se sim qual desconto: 10% ( ) 20% ( ) 30% ( ) 50% ( ) 70% ()
-<br>
-Prazo de desconto: 1 Mês ( ) 2 Meses ( ) 3 Meses ( ) 4 Meses ( )
-<br>
-Valor durante o desconto:
-<br>
-Valor após o desconto:
-<br>
-Fidelidade:
-<br>
-PRODUTOS CANCELADOS: (TV/BL/FONE/PA/A LA CARTE/SVAS):
-<br>
-Será necessário recolher algum equipamento? Se sim qual a data do agendamento?
-<br>
-Obs: Caso assinante ative a fatura digital o mesmo receberá desconto de R$ 5,00 todo mês.
-<br>
-Descreva brevemente a solicitação do cliente:
-<br><br>
-------------------------------------------<br>
-Ofertado migrar de plano<br>
-Ofertado 50% de desconto por 4 meses<br>
-Paramount, Deezer, Globoplay 90d<br>
-Isenção de fatura<br>
-Mudança de titular/endereço  <br>    
-Suspensão temporária <br>  
-------------------------------------------     
-<br><br>              
-CONTRATO NÃO REVERTIDO
-<br><br>
-Nome do Titular:<br>
-Titular está em linha no ato do atendimento? SIM ( ) NÃO ( )<br>
-Titular confirmou dados e passou para ser tratado por: _______ Parentesco: ______<br>
-Confirmado Dados? CPF ( ) Data de Nascimento ( ) Nome completo ( ) Endereço ( )<br>
-Telefone no ato da ligação:<br>
-Produtos cancelados:<br>
-Número portado: SIM ( ) NÃO ( )<br>
-Assinante ciente da perda do número: ( )<br>
-Última Fatura a receber? Se sim qual o valor?<br>
-Cliente com 7 dias de contratação?<br>
-Multa contratual: SIM ( ) NÃO ( ) Se sim qual o valor?<br>
-Data de recolhimento dos equipamentos:<br>
-Descreva brevemente a solicitação do cliente:<br>
-<br><br>
-APENAS INFORMAÇÕES
-<br><br>
-Nome do Titular:<br>
-Titular está em linha no ato do atendimento? SIM ( ) NÃO ( )<br>
-Titular confirmou dados e passou para ser tratado por:_______ Parentesco:__________<br>
-Confirmado Dados? CPF ( ) Data de Nascimento ( ) Nome completo ( ) Endereço ( )<br>
-Telefone no ato da ligação:<br>
-Ligação caiu no ato do atendimento? SIM ( ) NÃO ( )<br>
-Foi realizado 3x tentativas Call-Back? SIM ( ) NÃO ( )<br>
-Descreva brevemente a solicitação do cliente:<br>
+       <input type="text" id="bt0" placeholder="Solicitante" />
+  <input type="button" id="bt0_0" value="ok" onclick="resposta0()" />
+  <div id="res0"></div>
+
+  <br><br>
+
+  <label>Nome do Titular: <input type="text" id="nomeTitular" onblur="registrarCampo(this, 'Nome do Titular')" /></label><br><br>
+
+  <label>Titular está em linha? </label>
+  SIM <input type="radio" name="titularLinha" value="SIM" onchange="registrarRadio('titularLinha', 'Titular em linha')" />
+  NÃO <input type="radio" name="titularLinha" value="NÃO" onchange="registrarRadio('titularLinha', 'Titular em linha')" /><br><br>
+
+  <label>Confirmado dados e passou para ser tratado por: 
+    <input type="text" id="tratadoPor" onblur="registrarCampo(this, 'Tratado por')" />
+  </label><br><br>
+
+  <label>Telefone no ato da ligação: 
+    <input type="text" id="telefoneLigacao" onblur="registrarCampo(this, 'Telefone no ato da ligação')" />
+  </label><br><br>
+
+  <label>Plano que irá permanecer: 
+    <input type="text" id="plano" onblur="registrarCampo(this, 'Plano')" />
+  </label><br><br>
+
+  <label>Desconto:</label>
+  SIM <input type="radio" name="desconto" value="SIM" onchange="registrarRadio('desconto', 'Desconto')" />
+  NÃO <input type="radio" name="desconto" value="NÃO" onchange="registrarRadio('desconto', 'Desconto')" /><br><br>
+
+  <label>Valor durante o desconto: <input type="text" id="valorDesconto" onblur="registrarCampo(this, 'Valor durante o desconto')" /></label><br><br>
+  <label>Valor após o desconto: <input type="text" id="valorAposDesconto" onblur="registrarCampo(this, 'Valor após o desconto')" /></label><br><br>
+
+  <label>Fidelidade: <input type="text" id="fidelidade" onblur="registrarCampo(this, 'Fidelidade')" /></label><br><br>
+  <label>Produtos cancelados: <input type="text" id="produtosCancelados" onblur="registrarCampo(this, 'Produtos cancelados')" /></label><br><br>
+
+  <label>Número portado:</label>
+  SIM <input type="radio" name="numeroPortado" value="SIM" onchange="registrarRadio('numeroPortado', 'Número portado')" />
+  NÃO <input type="radio" name="numeroPortado" value="NÃO" onchange="registrarRadio('numeroPortado', 'Número portado')" /><br><br>
+
+  <label>Última fatura a receber? Se sim, qual o valor? <input type="text" id="ultimaFatura" onblur="registrarCampo(this, 'Última fatura')" /></label><br><br>
+
+  <label>Multa contratual:</label>
+  SIM <input type="radio" name="multa" value="SIM" onchange="registrarRadio('multa', 'Multa contratual')" />
+  NÃO <input type="radio" name="multa" value="NÃO" onchange="registrarRadio('multa', 'Multa contratual')" />
+  Se sim, qual o valor? <input type="text" id="valorMulta" onblur="registrarCampo(this, 'Valor da multa')" /><br><br>
+
+  <label>Data de recolhimento dos equipamentos: <input type="date" id="dataRecolhimento" onchange="registrarCampo(this, 'Data de recolhimento')" /></label><br><br>
+
+  <label>Descreva brevemente a solicitação do cliente:</label><br>
+  <textarea rows="10" cols="80" id="resumoSolicitacao"></textarea><br><br>
+  
             
           </div>
         </div>
