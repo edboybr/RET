@@ -1,3 +1,23 @@
+  function registrarCampo(elemento, descricao) {
+    if (elemento.value.trim() !== "") {
+      atualizarResumo(`${descricao}: ${elemento.value}`);
+    }
+  }
+
+  function registrarRadio(nomeGrupo, descricao) {
+    let valor = document.querySelector(`input[name="${nomeGrupo}"]:checked`);
+    if (valor) {
+      atualizarResumo(`${descricao}: ${valor.value}`);
+    }
+  }
+
+  function atualizarResumo(texto) {
+    let area = document.getElementById("resumoSolicitacao");
+    if (!area.value.includes(texto)) {
+      area.value += texto + "\n";
+    }
+  }
+
 function somase() {
 
     f1 = document.querySelector("input#fatura1")
