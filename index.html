@@ -40,8 +40,7 @@
   </label><br><br>
 
   <label>Desconto:</label>
-  SIM <input type="radio" name="desconto" value="SIM / 10% () 20% () 30% () 50% () 70% () / 2 meses () 3 meses () 4 meses ()" onchange="registrarRadio('desconto', 'Desconto')" />
-  NÃO <input type="radio" name="desconto" value="NÃO" onchange="registrarRadio('desconto', 'Desconto')" /><br><br>
+  <input type="text" id="Titularemlinha" onblur="registrarCampo(this, 'Desconto')" /></label><br><br>
 
   <label>Valor durante o desconto: <input type="text" id="valorDesconto" onblur="registrarCampo(this, 'Valor durante o desconto')" /></label><br><br>
   <label>Valor após o desconto: <input type="text" id="valorAposDesconto" onblur="registrarCampo(this, 'Valor após o desconto')" /></label><br><br>
