@@ -25,8 +25,7 @@
   <label>Nome do Titular: <input type="text" id="nomeTitular" onblur="registrarCampo(this, 'Nome do Titular')" /></label><br><br>
 
   <label>Titular está em linha? </label>
-  SIM <input type="radio" name="titularLinha" value="SIM / Confirmado: Nome completo () CPF () Data de nascimento ()" onchange="registrarRadio('titularLinha', 'Titular em linha')" />
-  NÃO <input type="radio" name="titularLinha" value="NÃO" onchange="registrarRadio('titularLinha', 'Titular em linha')" /><br><br>
+  <input type="text" id="Titularemlinha" onblur="registrarCampo(this, 'Titular está em linha')" /></label><br><br>
 
   <label>Confirmado dados e passou para ser tratado por: 
     <input type="text" id="tratadoPor" onblur="registrarCampo(this, 'Tratado por')" />
