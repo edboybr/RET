@@ -50,25 +50,25 @@ function somase() {
         if (desc == 10 ) {
     
             resd15 = (somafatura) - (somafatura * 10) / 100 - 5
-            resdesconto.innerHTML =  ` 10% de desconto = ${resd15.toFixed(2)}`
+            resdesconto.innerHTML =  ` 10% de desconto por X meses = ${resd15.toFixed(2)}`
     
         } else if (desc == 20) {
     
             resd50 = (somafatura) - (somafatura * 20) / 100 - 5
-            resdesconto.innerHTML =  `20% de desconto = ${resd50.toFixed(2)}`
+            resdesconto.innerHTML =  `20% de desconto por X meses = ${resd50.toFixed(2)}`
         }
     
         else if (desc == 30) {
             
             resd70 = (somafatura) - (somafatura * 30) / 100 - 5
-            resdesconto.innerHTML =  `30% de desconto = ${resd70.toFixed(2)}`
+            resdesconto.innerHTML =  `30% de desconto por X meses = ${resd70.toFixed(2)}`
             
         }
     
         else if ( desc == 50 ) {
     
             resd80 = (somafatura) - (somafatura * 50) / 100 - 5
-            resdesconto.innerHTML =  `50% de desconto = ${resd80.toFixed(2)}`
+            resdesconto.innerHTML =  `50% de desconto por X meses = ${resd80.toFixed(2)}`
     
             
         }
@@ -76,7 +76,7 @@ function somase() {
         else if ( desc == 70 ) {
     
             resd90 = (somafatura) - (somafatura * 70) / 100 - 5
-            resdesconto.innerHTML =  `70% de desconto = ${resd90.toFixed(2)}`
+            resdesconto.innerHTML =  `70% de desconto por X meses = ${resd90.toFixed(2)}`
     
             
         } else {alert("digite 10, 20, 30, 50 ou 70")}
@@ -85,3 +85,4 @@ function somase() {
     
     }
     
+
